@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*define el css de el body,  selector basico*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+
+/*===================MENU==========================*/
+
+#menu a, button{
+  font-size: 18px !important;
+  font-weight: 900;
+ 
+}
+
+#menu a{
+  color:#3f3f3f;
+  
+}
+/*===================SLIDER DE IMAGENES==========================*/
+.carousel-inner {
+ max-height:39rem !important;
+}
+
+
+/*===================SECCION CONTAINER CIPHER==========================*/
+#container-cipher-intro {
+  display: flex;
+  align-items: center;
+  margin-top:50px;
+  padding-bottom: 100px; 
+  padding-top: 500px;
+}
+
+#contenedor-principal {
+  border-top: 2px solid #c7c6c6;
+  padding-bottom: 200px; 
+  padding-top: 80px;
+}
+
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+ position:relative;
+ top: -130px;
+} 
+
+#seccion-contacto{
+ background-color: #fce7bc;
+ min-height:500px;
+ position:relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{
+ position:absolute;
+ top:40%;
+ left:50%;
+ transform: translate(-50%, -50%);
+ background: #fbfafa;
+ border-radius:5px;
+}
+
+#contenedor-formulario img {
+ height: 50%;
+ width: 50%;
+}
+
+#titulo-formulario {
+ color: #3f3f3f;
+}
+
+
+/*=========================FOOTER================================*/
+
+footer {
+ background: #ff6565;
+ min-height: 100px;;
+}
+footer p{
+ color:#f3f3f3;
+ text-align:center;
+}
+#iconos  i {
+ font-size: 26px;
+ padding: 0 8px;
+ color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+ #intro, #equipo {
+     width:90% !important;
+     margin:auto;
+ }
+
+ #local {
+     flex-wrap: wrap;
+     padding-top:30px;
+}
+.wrapper-local {
+ width:90%;
+ margin:auto;
+ padding-top:50px;    
+}
+
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+ #intro, #equipo{
+    width:90% !important;
+    margin:auto;
+ }
+
+ 
+ #img-equipo{
+    max-height:20rem !important;
+    width:90%;
+ }
+ .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+ }
+ #local {
+     flex-wrap: wrap;
+ }
+ .mapa img {
+    width:100%;
+    eight:auto;
+ }
+ #bg-contactos{
+     top: -120px;
+ }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+
+ #servicios-fila-2 {
+  width:100% !important;
+ }
+ #servicios-fila-1 {
+  width:100% !important;
+ }
+
+ .icono-wrap{
+  flex-wrap:wrap !important;
+  justify-content: center !important;
+  text-align: center;
+ }
+
+ /* ... */
+
+ .tab {
+  width: 450px !important;
+  margin: 0px 70px 0 70px !important;
+}
+
+ #container-cipher-intro {
+  display: flex;
+  align-items: center;
+  margin-top:30px;
+  padding-bottom: 100px; 
+  padding-top: 500px;
+}
+
+#contenedor-principal {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #c7c6c6;
+  padding-bottom: 250px;
+  padding-top: 100px;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center
+}
+
+#inputMensajeCifrado, #inputMensajeDescifrado {
+  width: 300px !important;
+  margin: 1px 0 0px -15px !important;
+}
+
+#inputCifrar {
+  width: 300px !important;
+  margin: 1px 0 0px -15px !important;
+}
+
+#inputDescifrar { 
+  width: 300px !important;
+  margin: 1px 0 0px -15px !important;
+}
+
+
+ .contenidoCiFrarDescifrar {
+  box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+  border-radius: 15px;
+  margin: 63px;
+  width: 70% !important;
+  height: 600px !important;
+  margin: 20px 0px 10px 0px !important;
+  }
+
+  h1, h3, h5 {
+    margin: 22px;
+    color: rgb(51, 48, 48);
+}
+
+ #contenedor-formulario{
+  margin: 100px 0 0px 0 !important;
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  background: #ffffff;
+  border-radius: 5px;
+ }
+
+ #contenedor-formulario img {
+  width: 100% !important;
+  margin-top: 33px !important;
+}
+}
+
+
+/*=================== CONTENEDOR CIPHER ==============================*/
+.contenedor-chiper {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+/*define el css de h1, h3, selectores basicos*/
+h1,h3 {
+  margin: 19px;
+  color: rgb(51, 48, 48);
+}
+
+/*define el css de input, button, selectores basicos*/
+input, button {
+  border: none;
+  outline: none;
+}
+
+/*Inicializar div DESCIFRAR COMO OCULTO, selector id*/
+#divDescifrar{  
+  display: none; 
+}
+
+/*define el css de el contenedor principal, selector id*/
+#contenedorPrincipal {
+  padding: 25px;/*crea espacio dentro del elemento*/
+  box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+  border-radius: 4px;
+  background-color: rgb(200, 255, 248);
+}
+
+.contenidoCiFrarDescifrar {
+  box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+  border-radius: 15px;
+  margin: 38px;
+  width: 650px;
+  height: 650px;
+  padding: 6px 56px;
+}
+
+.colorFondoCifrar{
+  background:  #ffbdbd;
+}
+
+.colorFondoDescifrar {
+  background: #eadaf3;
+}
+
+/*CSS de textarea cifrar y descifrar, selector id*/
+#inputCifrar {
+  width: 500px;
+  margin: 10px;
+  margin: 22px 0 0;
+  padding: 11px;
+  color: rgb(5, 5, 5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#inputDescifrar { 
+  width: 500px;
+  margin: 10px;
+  margin: 22px 0 0;
+  padding: 11px;
+  color: rgb(5, 5, 5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*CSS boton CIFRAR, slector id*/
+#btnCifrar {
+  border-radius: 4px;
+  background-color: #ff6565;
+  font-weight: 700;
+  margin: 10px;
+  padding: 0 5px;
+  height: 40px;
+  width: 120px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+/*evento hover aplicado a los botones CIFRAR*/
+#btnCifrar:hover{
+     background: #e2159e;
+}
+
+/*CSS boton DESCIFRAR, slector id*/
+#btnDescifrar {
+  border-radius: 4px;
+  background-color: #aa72df;
+  font-weight: 700;
+  margin: 10px;
+  padding: 0 5px;
+  height: 40px;
+  width: 120px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+/*evento hover aplicado a los botones CIFRAR*/
+#btnDescifrar:hover{
+  background: #4c056d;
+}
+
+.offsetstyle {
+  margin: 0px 11px 0;
+  padding: 5px;
+  width: 22%;
+  color: rgb(5, 5, 5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: grid;
+}
+
+/*CSS en "textarea resultado" del mensaje cifrado y descifrado, selector id*/
+#inputMensajeCifrado, #inputMensajeDescifrado {
+  width: 500px;
+  margin: 10px;
+  margin: 2px 0 0;
+  padding: 5px;
+  color: rgb(5, 5, 5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*CSS TABS*/
+.tab {
+  /*overflow:  especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+  /*El contenido es recortado y no se muestran barras de posición.*/
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  width: 637px;
+  margin: 0 20px 0 41px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabContent {
+  /*display: none;*/
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
